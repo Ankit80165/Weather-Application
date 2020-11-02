@@ -25,6 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
 				temp.innerHTML = `<p>${data.error}</p>`;
 				feels.innerHTML = `<p>${data.error}</p>`;
 				humidity.innerHTML = `<p>${data.error}</p>`;
+				title.textContent = 'Unable to Fetch';
 			} else {
 				// console.log(data.location);
 				// console.log(data.forecast);
