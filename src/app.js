@@ -15,21 +15,21 @@ hbs.registerPartials(path.join(__dirname, '../template/partials'));
 app.get('', (req, res) => {
 	res.render('index', {
 		title: 'Weather',
-		name: 'Anamika'
+		name: 'Ankit'
 	});
 });
 
 app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About Me',
-		name: 'Annu'
+		name: 'Ankit'
 	});
 });
 
 app.get('/help', (req, res) => {
 	res.render('help', {
 		title: 'Help',
-		name: 'Sondesh'
+		name: 'Ankit'
 	});
 });
 app.get('/products', (req, res) => {
