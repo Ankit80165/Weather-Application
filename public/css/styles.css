@@ -39,6 +39,7 @@ h1 {
 
 .portrait {
 	width: 250px;
+	border-radius: 50%;
 }
 
 .open {
@@ -140,6 +141,6 @@ button:active {
 }
 
 /* About page */
-.about-main {
+.about-main, .help-message {
 	font-family: 'Montserrat', sans-serif;
 }
