@@ -6,6 +6,7 @@ const geocoding = require('./utils/geocoding.js');
 const forecast = require('./utils/forecast.js');
 
 const app = express();
+const port = process.env.PORT || 4000;
 
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, '../public')));
@@ -69,6 +70,6 @@ app.get('*', (req, res) => {
 		errorMessage: 'Page not found!'
 	})
 })
-app.listen(4000, () => {
-	console.log('server has started...');
+app.listen(port, () => {
+	console.log(`server start running at ${port}...`);
 });
