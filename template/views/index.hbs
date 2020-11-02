@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="/img/weather.png">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/styles.css">
+	<script src="https://kit.fontawesome.com/e7fe3c2377.js" crossorigin="anonymous"></script>
+	<title>Weather App</title>
+</head>
+
+<body>
+	<div class="main-content">
+		{{>header}}
+		<form>
+			<input type="text" placeholder="Location" required name="name">
+			<button type="submit">Search</button>
+		</form>
+		<div class="open">
+			<h3 class="title">Location : Please provide some address!</h3>
+			<div class="contanier">
+				<div class="card">
+					<img src="/img/hot.png" alt="">
+					<h3>Temperature</h3>
+					<div class="fa-1x temp">
+						<p>Please provide some address</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/img/feel.png" alt="">
+					<h3>Feels Like</h3>
+					<div class="fa-1x feels">
+						<p>Please provide some address</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/img/humidity.png" alt="">
+					<h3>Humidity</h3>
+					<div class="fa-1x humidity">
+						<p>Please provide some address</p>
+					</div>
+				</div>
+			</div>
+			<div class="">
+
+			</div>
+		</div>
+	</div>
+
+	{{>footer}}
+	<script src="/js/app.js"></script>
+</body>
+
+</html>
