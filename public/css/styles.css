@@ -138,3 +138,8 @@ button:active {
 	font-size: 32px;
 	color: #333333;
 }
+
+/* About page */
+.about-main {
+	font-family: 'Montserrat', sans-serif;
+}
