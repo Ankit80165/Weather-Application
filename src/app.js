@@ -43,7 +43,7 @@ app.get('/weather', (req, res) => {
 		return res.send({error: 'please provide an address'})
 	}
 
-	geocoding(req.query.address, (response, {latitude, longitude, location} = {}) => {
+	geocoding(req.query.address, (response, {latitude, longitude, location, suggestions} = {}) => {
 		if (response) {
 			return res.send({error: response})
 		}
@@ -51,7 +51,7 @@ app.get('/weather', (req, res) => {
 			if (responseWeather) {
 				return res.send({error: responseWeather});
 			}
-			return res.send({forecast: weatherData, location: location, address: req.query.address});
+			return res.send({forecast: weatherData, location: location, address: req.query.address, suggestions: suggestions});
 		});
 	})
 	// res.send({weather: 'sunny', wind: 'fast', temp: 27, address: req.query.address});
